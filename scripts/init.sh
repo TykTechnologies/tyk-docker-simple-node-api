@@ -1,10 +1,8 @@
-cd simple-api
-echo 'Installing node dependencies...'
-npm install
-
-cd ..
 echo 'Cloning Tyk Pro demo repo...'
-npx degit https://github.com/TykTechnologies/tyk-pro-docker-demo.git tyk
+npx degit --force https://github.com/TykTechnologies/tyk-pro-docker-demo.git tyk
+
+echo 'Copying simple-api folder...'
+cp -R scripts/simple-api tyk/simple-api
 
 echo 'Copying env file...'
 cp scripts/.env.example tyk/.env

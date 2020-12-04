@@ -4,4 +4,17 @@ services:
     environment:
       - TYK_DB_LICENSEKEY=${LICENSE_KEY}
       - TYK_DB_HOSTCONFIG_HOSTNAME=${HOSTNAME}
-      - TYK_DB_HOSTCONFIG_OVERRIDEHOSTNAME=${HOSTNAME}:8080
+      - TYK_DB_HOSTCONFIG_GATEWAYHOSTNAME=${HOSTNAME}:8080
+
+  simple-api:
+    build:
+      context: .
+      dockerfile: ./simple-api/Dockerfile
+
+    volumes:
+    - ./simple-api/src/index.js:/var/www/index.js
+    - ./simple-api/src/package.json:/var/www/package.json
+    - ./simple-api/src/package-lock.json:/var/www/package-lock.json
+
+    ports:
+      - "3030:3030"
