@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  tyk-dashboard:
+    environment:
+      - TYK_DB_LICENSEKEY=${LICENSE_KEY}
+      - TYK_DB_HOSTCONFIG_HOSTNAME=${HOSTNAME}
+      - TYK_DB_HOSTCONFIG_OVERRIDEHOSTNAME=${HOSTNAME}:8080
