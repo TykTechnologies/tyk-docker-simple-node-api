@@ -11,3 +11,7 @@ Simple demo to connect Tyk Pro and a simple api inside Docker.
 ![initalization script](https://github.com/zalbiraw/tyk-docker-simple-node-api/blob/main/resources/init-script.gif "Initializing script")
 3. Navigate to the `tyk` folder and run the following script to launch Tyk Pro and the simple-api node server `docker-compose -f docker-compose.yml -f docker-local.yml up`.
 4. Navigate to [http://localhost:3000](http://localhost:3000) in your browser to access the Tyk Dashboard.
+
+## Adding Your Simple Node API
+1. Bootstrap Tyk Dashboard.
+![bootstrap](https://github.com/zalbiraw/tyk-docker-simple-node-api/blob/main/resources/bootstrap.gif "Bootstrap Tyk Dashboard")
