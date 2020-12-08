@@ -10,5 +10,8 @@ cp scripts/init/.env.example tyk/.env
 echo 'Copying docker-local.yml file...'
 cp scripts/init/docker-local.yml tyk/docker-local.yml
 
-read -p 'Please enter your Tyk Pro License key: ' license_key
+read -s -p 'Please enter your Tyk Pro License key: ' license_key
 echo LICENSE_KEY=$license_key >> tyk/.env
+echo '\n'
+
+tput setaf 2; echo "Tyk Pro configured. Navigate to the the tyk folder to run Tyk Pro using docker-compose."
