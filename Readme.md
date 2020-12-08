@@ -17,3 +17,5 @@ Simple demo to connect Tyk Pro and a simple api inside Docker.
 ![bootstrap](https://github.com/zalbiraw/tyk-docker-simple-node-api/blob/main/resources/bootstrap.gif "Bootstrap Tyk Dashboard")
 2. Create keyless Tyk API for our simple Node.js API.
 ![bootstrap](https://github.com/zalbiraw/tyk-docker-simple-node-api/blob/main/resources/create-keyless-api.gif "Create Keyless Tyk API")
+3. Test API through the Tyk Gateway at [http://localhost:8080/hello-world/user](http://localhost:8080/hello-world/user).
+![bootstrap](https://github.com/zalbiraw/tyk-docker-simple-node-api/blob/main/resources/test-api.gif "Test API through Tyk Gateway")
